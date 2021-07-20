@@ -7,6 +7,11 @@ New functionality includes:
   - parameterised conceptual similarity thresholding for base model selection
   - parameterless conceptual clustering for base model selection using Self-Tuning Spectral Clustering (see https://github.com/wOOL/STSC)
 
+## Running BOTL
+To use BOTL, run via `controller.py`
+- input parameters can be found using `python3 controller.py --help`, this specifies the underlying concept drift detector used, the method of selecting/culling base models, input dataset type, etc.
+
+
 ## Available data and data generators and BOTL implementations:
   - Following distance data for 6 journeys (2 drivers).
   - Drifting hyperplane data generator
