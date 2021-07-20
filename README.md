@@ -48,7 +48,7 @@ Code structure:
 # BOTL with Base Model Culling and Parameterless Model Selection
 Three BOTL-C variants are included in this repository: BOTL with PThresh (also referred to BOTL-C.I in previous repository, model culling based on performance), BOTL with MIThresh (also referred to as BOTL-C.II in the previous repository, model culling based on performance and diversity), and BOTL with PAThresh (model culling using Principal Angles between subspaces to estimate conceptual similarity) . Each of these are implemented in `Models/modelMultiConceptTransfer.py`. BOTL with PThresh is used when the parameter `weightType = 'OLSFE'`, BOTL with MIThresh is used when the parameter `weightType = 'OLSFEMI'`, and BOTL with PAThresh is used when the parameter `weightType = 'OLSFEPA'`. In order to use these implementations, additional parameters are needed, which are set in `controller.py` as follows:
 - *Performance threshold*: this was the original culling parameter, and therefore is denoted by parameter `CThresh` in `controller.py`
-- *Mutual Information threshold*: this parameter is denoted by `MIThresh` in `controller.py`
+- *Mutual Information threshold*: this parameter is denoted by `MThresh` in `controller.py`
 - *Conceptual Similarity threshold*: this parameter is denoted by `PAThresh` in `controller.py`
 
 For parameterless conceptual clustering used `weightType = 'OLSKPAC2'`. This will used STSC[[3]](#3) to detemine how many clusters of conceptually similar models are available to the meta-learner. The best performing model is selected from each cluster to be used as input to the meta-learner.
