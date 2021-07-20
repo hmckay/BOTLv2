@@ -1,5 +1,5 @@
 # BOTL
-This git repo has data, data generators and code for the Bi-directional Online Transfer Learning framework (BOTL). This is an updated version of the BOTL framework (see original in https://github.com/hmckay/BOTL).
+This git repo has data and code for the Bi-directional Online Transfer Learning framework (BOTL). This is an updated version of the BOTL framework (for original version and data generators see https://github.com/hmckay/BOTL). 
 BOTL was first introduced in [[1]](#1), and extended in [[2]](#2).
 
 New functionality includes:
