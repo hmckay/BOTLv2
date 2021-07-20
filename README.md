@@ -5,7 +5,7 @@ BOTL was first introduced in [[1]](#1), and extended in [[2]](#2).
 New functionality includes:
   - using Principal Angles between subspaces to estimate the conceptual similarity between base models
   - parameterised conceptual similarity thresholding for base model selection
-  - parameterless conceptual clustering for base model selection using Self-Tuning Spectral Clustering (see https://github.com/wOOL/STSC)
+  - parameterless conceptual clustering for base model selection using Self-Tuning Spectral Clustering[[3]](#3) (see https://github.com/wOOL/STSC)
 
 ## Running BOTL
 To use BOTL, run via `controller.py`
@@ -20,7 +20,7 @@ To use BOTL, run via `controller.py`
 Note the underlying framework is the same for all three implementations. For ease of reproducibility all three versions have been added.
 
 ## AWPro
-AWPro is a concept drift detection algorithm that combines aspects of ADWIN and RePro that better suit the BOTL framework. AWPro was first introduced in [[2]](#2).
+AWPro is a concept drift detection algorithm that combines aspects of RePro [[4]](#4) and ADWIN [[5]](#5) that better suit the BOTL framework. AWPro was first introduced in [[2]](#2).
 
 ## Parameter Analysis
 Parameter analysis to consider the impact of the parameter values of underlying concept drift detection strategies, and how they impact the BOTL framwork is discussed in [[2]](#2) (and available in: https://github.com/hmckay/BOTL, see `parameterAnalysis.pdf`).
@@ -64,3 +64,11 @@ McKay, H., Griffiths, N., Taylor, P., Damoulas, T. and Xu, Z., 2019. Online Tran
 <a id="2">[2]</a>
 McKay, H., Griffiths, N., Taylor, P., Damoulas, T. and Xu, Z., 2020. Bi-directional online transfer learning: a framework. Annals of Telecommunications, 75(9), pp.523-547.
 
+<a id="3">[3]</a>
+Zelnik, M.L. and Perona, P., 2015. Self-tuning spectral clustering. Advances in Neural Information Processing Systems, pp.1601-1608.
+
+<a id="4">[4]</a>
+Yang, Y., Wu, X. and Zhu, X., 2005, August. Combining proactive and reactive predictions for data streams. In Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining (pp. 710-715).
+
+<a id="5">[5]</a>
+Bifet, A. and Gavalda, R., 2007, April. Learning from time-changing data with adaptive windowing. In Proceedings of the 2007 SIAM international conference on data mining (pp. 443-448). Society for Industrial and Applied Mathematics.
