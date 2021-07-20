@@ -55,7 +55,7 @@ For parameterless conceptual clustering used `weightType = 'OLSKPAC2'`. This wil
 
 
 # Source Code
-The BOTL framework has been created using various code from other sources. ADWIN and AWPro implementations (which uses ADWIN as a basis for drift detection) are based upon the implementation available: https://github.com/rsdevigo/pyAdwin. This code is included in `datasetBOTL/BiDirTansfer/pyadwin/`
+The BOTL framework has been created using various code from other sources. ADWIN and AWPro implementations (which uses ADWIN as a basis for drift detection) are based upon the implementation available: https://github.com/rsdevigo/pyAdwin. This code is included in `pyadwin/`
 
 Self-Tuning Spectral Clustering has been created based on the implementation available: https://github.com/wOOL/STSC.
 
